@@ -2,3 +2,15 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --accent-color: #ff0070;
+  --background-color: #000028;
+  --text-color: #F1B2CE;
+  --title-color: #DB00FF;
+  --text-default-size: 18px;
+  --fonts: 'IBM Plex Mono', monospace;
+  --padding-header-footer: 10px;
+  --line-height-title: 82.5%;
+  --line-height-main: 130%;
+}
