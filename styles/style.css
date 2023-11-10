@@ -11,9 +11,9 @@
   background-attachment: fixed;
 }
 
-.title-decor {
-  background-color: var(--accent-color);
-  color: var(--background-color);
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0px var(--accent-color);
 }
 
 .header {
@@ -22,9 +22,10 @@
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100dvb;
   padding: var(--padding-header-footer);
+  margin-bottom: var(--margin-between);
 }
 
-.header::before, .header::after {
+.decorated-zone::before, .decorated-zone::after {
   content: "";
   display: block;
   position: absolute;
@@ -32,14 +33,14 @@
   height: 25px;
 }
 
-.header::before {
+.decorated-zone::before {
   top: var(--padding-header-footer);
   right: var(--padding-header-footer);
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
 
-.header::after {
+.decorated-zone::after {
   bottom: var(--padding-header-footer);
   left: var(--padding-header-footer);
   border-bottom: 1px solid var(--accent-color);
@@ -68,7 +69,7 @@
 }
 
 .header__title {
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--text-header-footer-size);
   color: var(--title-color);
   text-shadow: 4px 4px 0px var(--accent-color);
   line-height: var(--line-height-title);
@@ -105,4 +106,74 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color)
+}
+
+.main {
+  margin-top: var(--margin-between);
+  margin-bottom: var(--margin-between);
+  padding: var(--padding-main);
+  display: grid;
+  row-gap: var(--row-gap-main);
+}
+
+.section {
+  display: grid;
+  row-gap: 20px;
+}
+
+.section__title {
+  color: var(--accent-color);
+  font-size: 18px;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+.article {
+  display: grid;
+  row-gap: 10px;
+}
+
+.article__title {
+  font-size: 18px;
+}
+
+.title-thin {
+  font-weight: 400;
+}
+
+.article__content {
+  color: var(--text-color);
+}
+
+.section-gallery {
+  row-gap: 10px;
+}
+
+.gallery {
+  display: grid;
+  row-gap: var(--gap-gallery);
+}
+
+.gallery__picture {
+  max-width: 100%;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 100dvb;
+  padding: var(--padding-header-footer);
+  margin-top: var(--margin-between);
+}
+
+.footer__title {
+  font-size: var(--text-header-footer-size);
+  color: var(--title-color);
+  text-shadow: 2px 2px 0px var(--accent-color);
+  line-height: var(--line-height-title);
 }
