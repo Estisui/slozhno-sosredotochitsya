@@ -13,7 +13,20 @@
 
 .link {
   text-decoration: none;
+  border: solid 1px transparent;
   text-shadow: 2px 2px 0px var(--accent-color);
+}
+
+.link:hover {
+  border-bottom: solid 1px var(--text-color);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  border: solid 1px var(--text-color);
 }
 
 .header {
@@ -114,8 +127,23 @@
   height: 26px;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-transparent-color);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  
+  border-bottom: 1px solid var(--accent-color);
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
+  pointer-events: none;
 }
 
 @media (min-width: 992px) {
