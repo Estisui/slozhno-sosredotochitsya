@@ -6,9 +6,12 @@
 :root {
   --accent-color: #ff0070;
   --accent-transparent-color: rgba(255, 0, 112, 0.4);
+  --accent-decorations-color: #ff0070;
   --background-color: #000028;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
+  --background-image: url(../images/cover-image-dark.png);
+  --header-lamp-display: inline-flex;
   --text-default-size: 18px;
   --fonts: "IBM Plex Mono", monospace;
   --text-header-footer-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
