@@ -11,5 +11,7 @@
   --background-color: #000028;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
+  --title-shadow-color: #ff0070;
   --background-image: url(../images/cover-image-dark.png);
+  --header-lamp-display: inline-flex;
 }

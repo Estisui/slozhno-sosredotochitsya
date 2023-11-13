@@ -3,7 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-size: var(--text-default-size, 18px);
-  font-family: var(--fonts, Helvetica, Arial, sans-serif);
+  font-family: var(--fonts, 'Courier New', Courier, monospace);
   line-height: var(--line-height-main);
   background-image: var(--background-image);
   background-size: cover;
@@ -63,6 +63,7 @@
 
 .header__lamp {
   position: absolute;
+  text-transform: uppercase;
   display: var(--header-lamp-display);
   align-items: center;
   gap: 10px;
@@ -86,7 +87,7 @@
   position: relative;
   font-size: var(--text-header-footer-size);
   color: var(--title-color);
-  text-shadow: 4px 4px 0px var(--accent-color);
+  text-shadow: 4px 4px 0px var(--title-shadow-color);
   line-height: var(--line-height-title);
   align-self: center;
   left: var(--inset-left-header-title);
@@ -103,8 +104,8 @@
   }
 }
 
-.header__subtitle {
-  font-size: 18px;
+.header__text {
+  font-weight: 700;
 }
 
 .header__theme-menu {
@@ -212,7 +213,8 @@
   }
 }
 
-.section__title {
+.section__title,
+.section__subtitle {
   color: var(--accent-decorations-color);
   font-size: 18px;
 }
@@ -317,6 +319,6 @@
 .footer__title {
   font-size: var(--text-header-footer-size);
   color: var(--title-color);
-  text-shadow: 2px 2px 0px var(--accent-color);
+  text-shadow: 2px 2px 0px var(--title-shadow-color);
   line-height: var(--line-height-title);
 }
